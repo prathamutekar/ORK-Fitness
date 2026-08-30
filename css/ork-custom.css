@@ -1,0 +1,581 @@
+/* ORK Fitness — overrides & new sections on Colorlib Gym theme */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
+.nav-menu ul li {
+  margin-right: 22px;
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .nav-menu ul li {
+    margin-right: 14px;
+  }
+  .nav-menu ul li a {
+    font-size: 13px;
+  }
+}
+
+button.canvas-open {
+  background: transparent;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.hs-slider .hs-item .hi-text .secondary-btn,
+.hs-slider .hs-item .hi-text .hero-actions .primary-btn {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+}
+
+.hs-slider.owl-carousel .owl-item.active .hs-item .hi-text .hero-actions .primary-btn {
+  position: relative;
+  top: 0;
+  transition: all 0.6s ease 0.6s;
+  opacity: 1;
+}
+
+.logo a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo img,
+.fa-logo img {
+  max-height: 48px;
+  width: auto;
+}
+
+.header-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.header-cta .primary-btn {
+  padding: 12px 18px;
+  font-size: 12px;
+}
+
+.header-cta .btn-outline-call {
+  display: inline-block;
+  font-size: 12px;
+  padding: 11px 16px;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+.header-cta .btn-outline-call:hover {
+  border-color: #f36100;
+  color: #f36100;
+}
+
+.hi-text .hero-location {
+  display: block;
+  font-size: 15px;
+  color: #f36100;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.hi-text .hero-lead {
+  color: #c4c4c4;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+  max-width: 480px;
+}
+
+.hi-text .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hi-text .hero-actions .primary-btn,
+.hi-text .hero-actions .secondary-btn {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+}
+
+.hs-slider.owl-carousel .owl-item.active .hs-item .hi-text .secondary-btn {
+  position: relative;
+  top: 0;
+  transition: all 0.6s ease 0.7s;
+  opacity: 1;
+}
+
+.secondary-btn {
+  display: inline-block;
+  font-size: 14px;
+  padding: 16px 28px;
+  color: #ffffff;
+  border: 2px solid #f36100;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+.secondary-btn:hover {
+  background: #f36100;
+  color: #ffffff;
+}
+
+.hs-slider .hs-item {
+  position: relative;
+}
+
+.hs-slider .hs-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.45) 55%, rgba(0, 0, 0, 0.35) 100%);
+  z-index: 0;
+}
+
+.hs-slider .hs-item .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* About — no fake stat bars */
+.about-text.about-text--ork {
+  height: auto;
+  min-height: 640px;
+  padding: 100px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-focus-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+}
+
+.about-focus-list li {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 0 10px 28px;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-focus-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 18px;
+  width: 10px;
+  height: 10px;
+  background: #f36100;
+}
+
+.about-video.about-video--ork {
+  background-position: center;
+}
+
+/* Reviews CTA (Google reviews carousel) */
+.reviews-section {
+  background: #151515;
+}
+
+.google-reviews-summary {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.gr-summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  background: #0a0a0a;
+  border: 1px solid #2a2a2a;
+  padding: 18px 28px;
+}
+
+.gr-summary-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #4285f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.gr-summary-score {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.gr-rating-value {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.gr-rating-stars i {
+  color: #fbbc04;
+  font-size: 16px;
+  margin-right: 2px;
+}
+
+.gr-summary-count {
+  color: #c4c4c4;
+  margin: 6px 0 0;
+  font-size: 14px;
+}
+
+.google-reviews-track {
+  position: relative;
+}
+
+.google-reviews-track .gr-slide {
+  padding: 6px 0 20px;
+}
+
+.gr-card {
+  background: #0a0a0a;
+  border: 1px solid #2a2a2a;
+  padding: 28px 24px 26px;
+  height: 100%;
+  min-height: 280px;
+}
+
+.gr-card-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.gr-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #f36100;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.gr-author h3 {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: none;
+  margin: 0 0 4px;
+}
+
+.gr-source {
+  color: #8a8a8a;
+  font-size: 12px;
+}
+
+.gr-source i {
+  color: #4285f4;
+  margin-right: 4px;
+}
+
+.gr-badge {
+  margin-left: auto;
+  color: #4285f4;
+  font-size: 18px;
+}
+
+.gr-text {
+  color: #c4c4c4;
+  font-size: 14px;
+  line-height: 1.75;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.google-reviews-track.owl-carousel .owl-nav button {
+  height: 46px;
+  width: 46px;
+  color: #a9a9a9;
+  background: rgba(255, 255, 255, 0.1);
+  line-height: 46px;
+  text-align: center;
+  font-size: 24px;
+  position: absolute;
+  left: -8px;
+  top: 42%;
+  transform: translateY(-50%);
+}
+
+.google-reviews-track.owl-carousel .owl-nav button.owl-next {
+  left: auto;
+  right: -8px;
+}
+
+.google-reviews-track.owl-carousel .owl-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.google-reviews-track.owl-carousel .owl-dots button {
+  height: 8px;
+  width: 8px;
+  background: #5c5c5c;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.google-reviews-track.owl-carousel .owl-dots button.active {
+  background: #f36100;
+}
+
+.reviews-card {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  background: #0a0a0a;
+  padding: 50px 40px;
+  border: 1px solid #2a2a2a;
+}
+
+.reviews-card p {
+  color: #c4c4c4;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.reviews-card .google-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #4285f4;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .google-reviews-track.owl-carousel .owl-nav button {
+    left: 0;
+  }
+  .google-reviews-track.owl-carousel .owl-nav button.owl-next {
+    right: 0;
+  }
+  .gr-card {
+    min-height: 0;
+  }
+  .reviews-card {
+    padding: 36px 22px;
+  }
+}
+
+/* Enquiry form */
+.enquiry-section {
+  background: #0a0a0a;
+}
+
+.enquiry-section .section-title {
+  text-align: left;
+}
+
+.leave-comment label {
+  display: block;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.leave-comment .form-group {
+  margin-bottom: 4px;
+}
+
+.leave-comment form select {
+  font-size: 13px;
+  color: #c4c4c4;
+  width: 100%;
+  height: 46px;
+  border: 1px solid #363636;
+  padding-left: 16px;
+  padding-right: 36px;
+  background: #111111 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath fill='%23c4c4c4' d='M0 0l6 8 6-8z'/%3E%3C/svg%3E") no-repeat right 14px center;
+  margin-bottom: 20px;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+.leave-comment form select:invalid {
+  color: #8a8a8a;
+}
+
+.leave-comment .form-hint {
+  color: #8a8a8a;
+  font-size: 12px;
+  margin: -10px 0 18px;
+}
+
+.enquiry-error {
+  color: #ff6b6b;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.contact-actions .primary-btn,
+.contact-actions .secondary-btn {
+  padding: 14px 22px;
+  font-size: 13px;
+}
+
+.contact-widget .cw-text a {
+  color: #c4c4c4;
+}
+
+.contact-widget .cw-text a:hover {
+  color: #f36100;
+}
+
+/* Floating action buttons */
+.floating-actions {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 9990;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.floating-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff !important;
+  font-size: 26px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.floating-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+  color: #ffffff !important;
+}
+
+.floating-btn--whatsapp {
+  background: #25d366;
+}
+
+.floating-btn--call {
+  background: #f36100;
+}
+
+.gallery-section .section-title {
+  padding: 80px 15px 0;
+  margin-bottom: 40px;
+  background: #151515;
+}
+
+.gallery-section .gallery {
+  background: #151515;
+}
+
+.footer-section .fs-widget ul li a:hover,
+.footer-section .fa-social a:hover {
+  color: #f36100;
+}
+
+.fs-about .fa-social a[href*="wa.me"],
+.canvas-social a[href*="wa.me"] {
+  color: #25d366;
+}
+
+@media only screen and (max-width: 991px) {
+  .header-cta {
+    display: none;
+  }
+
+  .about-text.about-text--ork {
+    min-height: 0;
+    padding: 60px 30px;
+  }
+
+  .floating-actions {
+    right: 14px;
+    bottom: 90px; /* keep clear of mobile UI / form controls */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hi-text .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .reviews-card {
+    padding: 36px 22px;
+  }
+
+  .enquiry-section .section-title {
+    text-align: center;
+  }
+
+  .map {
+    height: 360px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .floating-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+}
