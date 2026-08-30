@@ -1,0 +1,7 @@
+# ORK Fitness — robots.txt
+# Replace https://www.YOUR-DOMAIN.com with your production domain.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.YOUR-DOMAIN.com/sitemap.xml
